@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ImageUploader</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="btnUploadToServer">Upload to Server</string>
+    <string name="btnReturn">Return Back</string>
+    <string name="btnEnter">Enter IP Address</string>
+    <string name="btnTakePicture">Take Picture</string>
+    <string name="btnRecordVideo">Record Video</string>
+    <string name="btnSelectFromAlbum">Select From Album</string>
+    <string name="or">(or)</string>
+</resources>

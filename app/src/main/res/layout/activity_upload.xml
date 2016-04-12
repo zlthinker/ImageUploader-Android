@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fdffff"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+
+
+    <!-- To display picture taken -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="236dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:layout_marginLeft="6dp">
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBar"
+                android:layout_weight="3" />
+
+            <TextView
+                android:layout_width="47dp"
+                android:layout_height="fill_parent"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/progressText" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgPreview"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:visibility="gone" />
+
+        <VideoView
+            android:id="@+id/videoPreview"
+            android:layout_width="fill_parent"
+            android:layout_height="400dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <!-- Videoview to preview recorded video -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnUpload"
+                android:src="@mipmap/cloudstorage"
+                android:background="#feffff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="   Upload To Server"
+                android:id="@+id/textView2" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnReturn"
+                android:src="@mipmap/left_arrow1"
+                android:background="#feffff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="   Go Back               "
+                android:id="@+id/textView3" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
